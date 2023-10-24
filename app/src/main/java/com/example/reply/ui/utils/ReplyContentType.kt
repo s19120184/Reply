@@ -1,5 +1,5 @@
 package com.example.reply.ui.utils
 
-enum class ReplyContentType {
+enum class ReplyContentTypes {
     LIST_ONLY, LIST_AND_DETAIL
 }
