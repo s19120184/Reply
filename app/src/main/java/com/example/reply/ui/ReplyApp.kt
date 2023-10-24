@@ -25,8 +25,6 @@ import com.example.reply.data.MailboxType
 import com.example.reply.ui.utils.ReplyContentType
 import com.example.reply.ui.utils.ReplyNavigationType
 
-
-
 @Composable
 fun ReplyApp(
     windowSize: WindowWidthSizeClass,
@@ -57,6 +55,7 @@ fun ReplyApp(
     }
     ReplyHomeScreen(
         navigationType = navigationType,
+        contentType = contentType,
         replyUiState = replyUiState,
         onTabPressed = { mailboxType: MailboxType ->
             viewModel.updateCurrentMailbox(mailboxType = mailboxType)
